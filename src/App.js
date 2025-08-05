@@ -280,7 +280,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
+     {/* Projects Section */}
       <section id="projects" style={{
         padding: '4rem 2rem',
         background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)'
@@ -430,9 +430,30 @@ const Portfolio = () => {
             onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
             onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-                <Palette size={24} color="#4caf50" />
-                <h3 style={{ margin: 0, color: '#4caf50' }}>Fresh Market</h3>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Palette size={24} color="#4caf50" />
+                  <h3 style={{ margin: 0, color: '#4caf50' }}>Fresh Market</h3>
+                </div>
+                <a
+                  href="https://fresh-market-theta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: '0.5rem 1rem',
+                    background: 'linear-gradient(135deg, #4caf50, #45a049)',
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500',
+                    transition: 'transform 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                >
+                  Live Demo
+                </a>
               </div>
               <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
                 {['HTML', 'CSS', 'JavaScript', 'React.js'].map((tech) => (
@@ -590,9 +611,30 @@ const Portfolio = () => {
             onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
             onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-                <Palette size={24} color="#ff6b6b" />
-                <h3 style={{ margin: 0, color: '#ff6b6b' }}>Devjobs</h3>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Palette size={24} color="#ff6b6b" />
+                  <h3 style={{ margin: 0, color: '#ff6b6b' }}>Devjobs</h3>
+                </div>
+                <a
+                  href="https://devjobs-mjpru.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: '0.5rem 1rem',
+                    background: 'linear-gradient(135deg, #ff6b6b, #ff5252)',
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500',
+                    transition: 'transform 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+                  onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
+                >
+                  Live Demo
+                </a>
               </div>
               <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
                 {['HTML', 'CSS', 'JavaScript', 'MongoDB'].map((tech) => (
@@ -693,7 +735,7 @@ const Portfolio = () => {
             </a>
           </div>
 
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
             <a href="https://www.linkedin.com/in/komal-gangwar-646bb8227/" target="_blank" rel="noopener noreferrer" style={{
               display: 'flex',
               alignItems: 'center',
@@ -730,6 +772,25 @@ const Portfolio = () => {
             >
               <Github size={20} />
               <span>GitHub</span>
+            </a>
+
+            <a href="https://leetcode.com/u/KomalGangwar/" target="_blank" rel="noopener noreferrer" style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '1rem 2rem',
+              background: 'rgba(255, 255, 255, 0.2)',
+              borderRadius: '25px',
+              textDecoration: 'none',
+              color: 'white',
+              transition: 'background 0.3s ease',
+              border: '1px solid rgba(255, 255, 255, 0.3)'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)'}
+            onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'}
+            >
+              <Code size={20} />
+              <span>LeetCode</span>
             </a>
           </div>
 
