@@ -135,10 +135,10 @@ const Portfolio = () => {
               <MapPin size={20} />
               <span>Bareilly, Uttar Pradesh</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Phone size={20} />
-              <span>+91-7037479176</span>
-            </div>
+            // <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            //   <Phone size={20} />
+            //   <span>+91-7037479176</span>
+            // </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Mail size={20} />
               <span>komalgangwar2004@gmail.com</span>
@@ -715,24 +715,24 @@ const Portfolio = () => {
               <span>komalgangwar2004@gmail.com</span>
             </a>
             
-            <a href="tel:+917037479176" style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1rem',
-              padding: '1.5rem',
-              background: 'rgba(255, 255, 255, 0.1)',
-              borderRadius: '15px',
-              textDecoration: 'none',
-              color: 'white',
-              transition: 'transform 0.3s ease',
-              border: '1px solid rgba(255, 255, 255, 0.2)'
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
-            onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-            >
-              <Phone size={24} />
-              <span>+91-7037479176</span>
-            </a>
+            // <a href="tel:+917037479176" style={{
+            //   display: 'flex',
+            //   alignItems: 'center',
+            //   gap: '1rem',
+            //   padding: '1.5rem',
+            //   background: 'rgba(255, 255, 255, 0.1)',
+            //   borderRadius: '15px',
+            //   textDecoration: 'none',
+            //   color: 'white',
+            //   transition: 'transform 0.3s ease',
+            //   border: '1px solid rgba(255, 255, 255, 0.2)'
+            // }}
+            // onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
+            // onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+            // >
+            //   <Phone size={24} />
+            //   <span>+91-7037479176</span>
+            // </a> 
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
